@@ -118,7 +118,7 @@ void AProfilerGameCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	// Bind fire event
-	//PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AProfilerGameCharacter::OnFire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AProfilerGameCharacter::OnFire);
 
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
