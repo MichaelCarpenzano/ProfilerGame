@@ -6,13 +6,13 @@
 #include "GameFramework/GameModeBase.h"
 #include "ProfilerGameGameMode.generated.h"
 
-UCLASS(minimalapi)
+UCLASS()
 class AProfilerGameGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
-
-public:
-	AProfilerGameGameMode();
+		virtual void StartPlay() override;
+//public:
+	//AProfilerGameGameMode();
 };
 
 
